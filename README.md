@@ -2,7 +2,7 @@
 
 * Petrinet is an descriptive tool used to represent Distributed Systems. It is also known as the Place/Transition Net. The Petrinet comprises of Places, Transitions and Arcs(connects the P->T or T->P)
 
-* **Places** hold markings/tokens inside them ., (⬤) . 
+* **Places** hold markings/tokens (⬤) inside them 
 
 * **Transition** fire these tokens from place to place via the Arcs. Transitions are enabled when the corresponding places have tokens/markings in them.
 * There are two types of Transitions: **Inplaces(source->place, dest->transition)** , **Outplaces(source->transition,dest->place)**.
@@ -13,7 +13,6 @@ increases the amount of token in all outplaces of the transition by one.
 
 * The below is a Simple Petri Net Example
   
-* 
 ![Alt text](images/9.png)
 
 
@@ -21,8 +20,7 @@ increases the amount of token in all outplaces of the transition by one.
 * The Petri Net is run by successively firing all enabled transitions, , the execution of Petri nets is nondeterministic: when multiple transitions are enabled at the same time, they will fire in any order. 
 * Petri nets are used for modeling the concurrent behavior of distributed systems.
 
-# Installation Steps
-## Prerequisties
+# Prerequisties
 
 * Mongodb <https://www.mongodb.com/download-center/community/releases/archive> - VERSION 4.4.16(most compatible)
 * Nodejs/npm <https://nodejs.org/en/download/> - V14 or V16
@@ -38,7 +36,7 @@ increases the amount of token in all outplaces of the transition by one.
 * We need to create a new project and start configuring the seed
 * In the project, after configuring the seed and exporting the webgmex file. We need to add it to our git repository.
 
-## Installation
+# Installation
 * After installing the required softwares, we need to download the **petrinet.webgmex** file and place it in the Parent Directory. 
 * We need to clone this repository and update the path in the .env folder
 * Now we need to run the **create_seed.sh** and give the input as 'petrinet'
