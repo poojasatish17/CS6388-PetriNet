@@ -1,0 +1,29 @@
+{
+  "components": {
+    "seeds": {
+      "petrinet": {
+        "src": "src/seeds/petrinet"
+      }
+    },
+    "plugins": {
+      "state": {
+        "src": "src/plugins/state",
+        "test": "test/plugins/state"
+      }
+    },
+    "visualizers": {
+      "visualizer": {
+        "src": "panels/visualizer/visualizerPanel",
+        "title": "visualizer",
+        "panel": "src/visualizers/panels/visualizer",
+        "secondary": false,
+        "widget": "src/visualizers/widgets/visualizer"
+      }
+    }
+  },
+  "dependencies": {
+    "seeds": {},
+    "plugins": {},
+    "visualizers": {}
+  }
+}
